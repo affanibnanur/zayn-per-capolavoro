@@ -1,0 +1,209 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zayn Malik Per Capolavoro</title>
+    <style>
+        body, html {
+            margin: 0;
+            padding: 0;
+            width: 100%;
+            height: 100%;
+            overflow: hidden;
+        }
+
+        .video-background {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            z-index: -1; /* Manda il video in background */
+        }
+
+        .content {
+            position: relative;
+            z-index: 1; /* Qualcosa */
+            color: mistyrose;
+            text-align: center;
+            font-family: 'comic sans ms', cursive;
+        }
+
+        .content h1 {
+            margin-top: 14%;
+            font-size: 4em;
+        }
+        .content p{
+            font-size: 1.5em;
+        }
+        .caption {
+            position: absolute;
+            top: 5px; /* Adjust vertical position */
+            right: 5px; /* Adjust horizontal position */
+            background-color: none; /* Adjust background color */
+            color: lightyellow;
+            font-size: 14px; /* Adjust font size */
+            padding: 3px 6px; /* Adjust padding */
+            border-radius: 50%; /* Makes it round */
+        }
+
+        /* Navigation Bar Styles */
+        .navbar {
+            overflow: hidden;
+        }
+
+            .navbar a {
+                float: left;
+                display: flex;
+                color:cornflowerblue;
+                text-align: center;
+                padding: 14px 16px;
+                text-decoration: none;
+                font-size: 19px;
+                border: none;
+                outline: none;
+                background-color: inherit;
+                font-family: inherit;
+                margin: 0;
+            }
+
+                .navbar a:hover, .dropdown:hover .dropbtn {
+                    background-color: #555;
+                }
+
+        .dropdown {
+            float: left;
+            overflow: hidden;
+        }
+
+            .dropdown .dropbtn {
+                font-size: 19px;
+                border: none;
+                outline: none;
+                color: cornflowerblue;
+                padding: 14px 16px;
+                background-color: inherit;
+                font-family: inherit;
+                margin: 0;
+            }
+
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #333;
+            min-width: 160px;
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+            z-index: 1;
+        }
+
+            .dropdown-content a {
+                float: none;
+                color: snow;
+                padding: 12px 16px;
+                text-decoration: none;
+                display: block;
+                text-align: left;
+            }
+
+                .dropdown-content a:hover {
+                    background-color: #555;
+                }
+
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+
+        .navbar img {
+            width: 20px; /* Adjust size as needed */
+            height: 20px; /* Adjust size as needed */
+            object-fit: contain; /* Ensures the image fits within the specified dimensions */
+            margin-right: 5px;
+        }
+
+        .comment-box{
+            top: 84%;
+            left:28%;
+            position:absolute;
+            transform:translate(-50%,-50%);
+        }
+        .comment-box h2{
+            font-size: 15px;
+            margin-bottom: 15px;
+            color: mintcream;
+        }
+        .comment-box input{
+            width:30%;
+            height:20px;
+            padding:0 0px;
+            margin-bottom:15px;
+            border-radius:5px;
+            border:1px solid#86b0b6;
+        }
+            .comment-box textarea {
+                width: 100%;
+                height: 50px;
+                padding: 15px 20px;
+                margin-bottom: 10px;
+                border-radius: 5px;
+                border: 1px solid#86b0b6;
+            }
+
+    </style>
+
+</head>
+<body>
+
+    <div class="navbar">
+        <a href="https://en.wikipedia.org/wiki/Zayn_Malik">INTRODUZIONE</a>
+        <div class="dropdown">
+            <button class="dropbtn">ALBUM</button>
+            <div class="dropdown-content">
+                <a href="https://music.apple.com/it/album/mind-of-mine-deluxe-edition/1087172327">Mind Of Mine (2016)</a>
+                <a href="https://music.apple.com/it/album/icarus-falls/1531015419">Icarus Falls (2018)</a>
+                <a href="https://music.apple.com/it/album/nobody-is-listening/1541392718">Nobody Is Listening (2021)</a>
+                <a href="https://music.apple.com/it/album/room-under-the-stairs-z-sides/1746612301">Room Under The Stairs (2024)</a>
+            </div>
+        </div>
+        <a href="https://shop.universalmusic.it/collections/zayn">MERCH</a>
+        <div class="dropdown">
+            <button class="dropbtn">SOCIAL MEDIA</button>
+            <div class="dropdown-content">
+
+                <a href="https://www.instagram.com/zayn/?hl=en">Instagram</a>
+                <a href="https://www.facebook.com/zayn/">Facebook</a>
+
+            </div>
+        </div>
+
+
+        <video class="video-background" autoplay muted loop>
+            <source src="zayn.html.mp4" type="video/mp4">
+            Il tuo browser non supporta il tag video.
+        </video>
+        <div class="content">
+            <h1>Pop Cantante Britannico<b1>"ZAYN MALIK"</b1></h1>
+            <p>Cantante e cantautore britannico, noto per essere un ex membro della boy band One Direction per la sua carriera solista di successo.</p>
+        </div>
+    </div>
+
+
+    <div class="comment-box">
+        <h2>Condividici Il Tuo Commento</h2>
+        <form action="#">
+            <input type="text" name="full_name" placeholder="Nome...">
+            <input type="text" name="full_name" placeholder="Cognome...">
+            <input type="email" name="email" placeholder="E-mail...">
+            <input type="text" name="comment" placeholder="Commento...">
+            <button type="submit">Invia</button>
+            <button type="reset">Annulla</button>
+        </form>
+    </div>
+
+    <span class="caption">
+        "ROOM UNDER THE STAIRS is out now everywhere.Thank you for all your unwavering love and support.<br></br>I hope you love this record just as much as I loved creating it"- &nbsp;Malik su instagram; 17 Maggio 2024 <br></br>-Scritto da "Affan Ibna Nur"
+    </span>
+
+</body>
+</html>
